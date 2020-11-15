@@ -1,0 +1,32 @@
+@page
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<div id="main">
+    <button id="run-test" onclick="runTest()">Run Test</button>
+</div>
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="~/client.js"></script>
+<script>
+var client = someClient(axios)
+
+var runTest = function (){
+    client.index()
+        .then(res => {
+            var main = document.getElementById('main')
+            var results = document.createElement('div')
+            results.id = 'results'
+            results.innerText = res.data
+            main.appendChild(results)
+        })
+}
+</script>
+</body>
+</html>

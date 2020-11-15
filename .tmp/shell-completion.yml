@@ -1,0 +1,40 @@
+Configuration:
+- Debug
+- Release
+Continue: 
+Help: 
+Host:
+- AppVeyor
+- AzurePipelines
+- Bamboo
+- Bitrise
+- Console
+- GitHubActions
+- GitLab
+- Jenkins
+- TeamCity
+- Travis
+NoLogo: 
+Plan: 
+Root: 
+Skip:
+- Clean
+- Compile
+- GenerateJavascriptClient
+- Restore
+- RunTests
+- StartTestApi
+- StopTestApi
+Target:
+- Clean
+- Compile
+- GenerateJavascriptClient
+- Restore
+- RunTests
+- StartTestApi
+- StopTestApi
+Verbosity:
+- Minimal
+- Normal
+- Quiet
+- Verbose

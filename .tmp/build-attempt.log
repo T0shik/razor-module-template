@@ -1,0 +1,8 @@
+2d950c8b0ad262c378882725072f4ff2
+StartTestApi
+Clean
+Restore
+Compile
+GenerateJavascriptClient
+RunTests
+StopTestApi
